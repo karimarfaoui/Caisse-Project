@@ -1,0 +1,27 @@
+.cutom-size{
+    width: 80px;
+    height: 60px;
+}
+.input-size{
+    height: 50px;
+}
+.style-button{
+    background-color: gray;
+    font-weight: bold;
+    color: black;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    height: 50px;
+}
+.non-button{
+    border: 1px gray solid;
+    background-color: white;
+    height: 50px;
+    margin-top: 5px;
+        margin-bottom: 5px;
+}
+.authentification-button{
+    background-color: gray;
+    font-weight: bold;
+    color: black;
+}
