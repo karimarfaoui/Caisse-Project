@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
+import { ConfigrationComponent } from '../configration/configration.component';
 
 @Component({
   selector: 'app-caisse',
   standalone: true,
-  imports: [],
+  imports: [ConfigrationComponent],
   templateUrl: './caisse.component.html', 
   styleUrl: './caisse.component.css'
 })
 export class CaisseComponent {
   stringToEvaluate:string='';
+  evaluate:any=document.getElementById("monInput");
   modepasse:string="12345";
+  clickOn:boolean=false;
   isAuthentification:Boolean=false;
   takeInput(num:string){
     this.stringToEvaluate=this.stringToEvaluate+num;
@@ -35,6 +38,16 @@ authentification(){
       alert("votre mode passe et incorrecter please try agains");
       this.stringToEvaluate="";
     }
+    console.log(this.evaluate);
 
   }
+  effacerCharachtere(){
+    if(this.stringToEvaluate!=""){
+      this.stringToEvaluate=this.stringToEvaluate.slice(0,-1);
+    }
+    else{
+      alert("votre mode passe est null")
+    }
+  }
+  
 }
