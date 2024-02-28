@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { ConfigrationComponent } from '../configration/configration.component';
 
 @Component({
-  selector: 'app-caisse',
+  selector: 'app-index',
   standalone: true,
-  imports: [ConfigrationComponent],
-  templateUrl: './caisse.component.html', 
-  styleUrl: './caisse.component.css'
+  imports: [],
+  templateUrl: './index.component.html',
+  styleUrl: './index.component.css'
 })
-export class CaisseComponent {
+export class IndexComponent {
+
   stringToEvaluate:string='';
   evaluate:any=document.getElementById("monInput");
   modepasse:string="12345";
@@ -49,5 +49,4 @@ authentification(){
       alert("votre mode passe est null")
     }
   }
-  
 }
