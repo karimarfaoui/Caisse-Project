@@ -1,9 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { SidebarModule } from 'primeng/sidebar';
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [],
+  imports: [SidebarModule,RouterOutlet,RouterLink,RouterLinkActive,CommonModule],
   templateUrl: './index.component.html',
   styleUrl: './index.component.css'
 })
@@ -14,6 +17,7 @@ export class IndexComponent {
   modepasse:string="12345";
   clickOn:boolean=false;
   isAuthentification:Boolean=false;
+sidebarVisible: any;
   takeInput(num:string){
     this.stringToEvaluate=this.stringToEvaluate+num;
     console.log(this.stringToEvaluate);
@@ -49,4 +53,5 @@ authentification(){
       alert("votre mode passe est null")
     }
   }
+  
 }
