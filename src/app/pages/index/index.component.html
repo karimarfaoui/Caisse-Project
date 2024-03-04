@@ -34,13 +34,13 @@
     </div>
     
     <div class="container border border-white mt-3 d-flex justify-content-center">
-      <button class="pi pi-box btn ms-1 non-button " *ngIf="isAuthentification" [class.authentification-button]="isAuthentification" >Caisse </button>
-      <button class="btn ms-1 non-button " *ngIf="isAuthentification" [class.authentification-button]="isAuthentification">Lecture</button>
-      <button class="btn ms-1 non-button " *ngIf="isAuthentification" [class.authentification-button]="isAuthentification">Cloture</button>
-      <button class="btn ms-1 non-button " *ngIf="isAuthentification" [class.authentification-button]="isAuthentification" >Periodique</button>
-      <button class="btn ms-1 style-button " (click)="parameter()">Parametres</button>
-      <button class="btn ms-1 non-button " [class.authentification-button]="isAuthentification" *ngIf="isAuthentification" routerLink="/configuration-component" routerLinkActive="active" ariaCurrentWhenActive="page">Configuration</button>
-      <button class="btn ms-1 style-button">Quiter</button>
+      <button class="pi pi-box btn ms-1 non-button bare" routerLink="caisse" *ngIf="isAuthentification" [class.authentification-button]="isAuthentification" >Caisse </button>
+      <button class="btn ms-1 non-button bare" routerLink="lecture" *ngIf="isAuthentification" [class.authentification-button]="isAuthentification">Lecture</button>
+      <button class="btn ms-1 non-button bare" routerLink="cloture" *ngIf="isAuthentification" [class.authentification-button]="isAuthentification">Cloture</button>
+      <button class="btn ms-1 non-button bare" routerLink="periodique" *ngIf="isAuthentification" [class.authentification-button]="isAuthentification" >Periodique</button>
+      <button class="btn ms-1 style-button bare" routerLink="parameters" *ngIf="isAuthentification">Parametres</button>
+      <button class="btn ms-1 non-button bare" [class.authentification-button]="isAuthentification" *ngIf="isAuthentification" routerLink="configuration" routerLinkActive="active" ariaCurrentWhenActive="page">Configuration</button>
+      <button class="btn ms-1 style-button bare">Quiter</button>
       
     </div>
     <div>
