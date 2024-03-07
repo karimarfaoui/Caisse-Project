@@ -21,10 +21,14 @@ export const routes: Routes = [
     {path:'lecture',component:LectureComponent},
     {path:'parameters',component:ParametersComponent},
     {path:'periodique',component:PeriodiqueComponent},
-    {path:'article',component:ArticleComponent},
-    {path:'ecran',component:EcranComponent},
-    {path:'paiement',component:PaiementComponent},
-    {path:'commentaire',component:CommentaireComponent},
-    {path:'stock',component:StockComponent},
-    {path:'acces',component:AccesComponent},
+    {path:'configuration',children:[
+
+        {path:'article','title':'configuration |article',component:ArticleComponent},
+        {path:'acces','title':'configuration |acces',component:AccesComponent},
+        {path:'commentaire','title':'configuration |commentaire',component:CommentaireComponent},
+        {path:'ecran','title':'configuration |ecran',component:EcranComponent},
+        {path:'paiement','title':'configuration |paiement',component:PaiementComponent},
+        {path:'stock','title':'configuration |stock',component:StockComponent},
+    ]},
+  
 ]
