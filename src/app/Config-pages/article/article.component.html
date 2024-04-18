@@ -1,1 +1,114 @@
-<p>article works!</p>
+<div class="container">
+  <div class="container">
+    <h1 class="text-center text-primary">Fiche Article</h1>
+  </div>
+  <div class="container article fw-bold">
+    <div class="inputAria">
+      <div>
+        <div class="input-group mt-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Code Produit</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mt-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Designation</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="dropdown d-flex align-items-center">
+     Group :
+      <select class="bg-secondary">
+        <option value="gourp"><button class="btn dropdown-item" type="button">Action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Another action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Something else here</button></option>
+      </select>
+      <h1 class="bi bi-plus-square-fill m-2"></h1>
+      <select class="bg-secondary">
+        <option value="gourp"><button class="btn dropdown-item" type="button">Action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Another action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Something else here</button></option>
+      </select>
+    </div>
+    <br>
+    <div class="dropdown d-flex align-items-center">
+    famille:
+      <select class="bg-secondary">
+        <option value="famille"><button class="btn dropdown-item" type="button">Action</button></option>
+        <option value="famille"><button class="btn dropdown-item" type="button">Another action</button></option>
+        <option value="famille"><button class="btn dropdown-item" type="button">Something else here</button></option>
+      </select>
+      <h1 class="bi bi-plus-square-fill m-2"></h1>
+      <select class="bg-secondary">
+        <option value="gourp"><button class="btn dropdown-item" type="button">Action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Another action</button></option>
+        <option value="gourp"><button class="btn dropdown-item" type="button">Something else here</button></option>
+      </select>
+    </div>
+    <div class="">
+      <div class="Prix-vente d-flex justify-content-around m-4">
+        <div class="input-group mt-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Prix de Vente</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        Prix vente 2 : <input type="number" placeholder="0,00" id="">
+        Commentaire :<input type="text" placeholder="Sans message ">
+        
+      </div>
+      <div>
+  
+      TVA %: 
+        
+      <select class="bg-secondary">
+        <option><button class="btn dropdown-item" type="button">Action</button></option>
+        <option><button class="btn dropdown-item" type="button">Another action</button></option>
+        <option><button class="btn dropdown-item" type="button">Something else here</button></option>
+      </select>
+      </div>
+    </div>
+   
+    <div class="border mt-2">
+      <div class="impremante d-flex justify-content-around">
+        <div class="m-2">
+          Imprimenter : <input type="number"> <br>
+          <button class="bi bi-printer-fill print bg-secondary mt-2">Selectioner Imprimante</button>
+        </div>
+      <div class="d-flex ">
+        <div class="m-2">
+          <p-checkbox label="Prix libre" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Prix 0 autorisé" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Fidélité" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Validation" name="" value=""></p-checkbox>
+        </div>
+        <div class="m-2">
+          <p-checkbox label="Stock" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Qte Décimale autorisé" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Personnel autorisé" name="" value=""></p-checkbox><br>
+          <p-checkbox label="Article gratuit" name="" value=""></p-checkbox>
+        </div>
+       
+
+      </div>
+      </div>
+   
+
+    </div>
+    <div class="image m-4  d-flex justify-content-end"><input type="file" ></div>
+
+  </div>
+  <footer class="d-flex justify-content-around ">
+    <button class="bi bi-info-circle-fill bg-secondary ">Liste Article</button>
+    <button class="bi bi-floppy2-fill bg-secondary ">Enregister</button>
+    <button class="bi bi-keyboard-fill bg-secondary ">Clavier</button>
+    <button  class="bi bi-trash-fill bg-secondary ">Supprimer</button>
+   <button routerLink="/configuration" class="bi bi-x-circle-fill bg-secondary ">fermer</button>
+
+    
+  </footer>
+</div>
