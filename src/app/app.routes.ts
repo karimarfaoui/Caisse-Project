@@ -31,4 +31,5 @@ export const routes: Routes = [
         {path:'stock','title':'configuration |stock',component:StockComponent},
     ]},
   
+    
 ]

@@ -21,11 +21,14 @@
         margin-bottom: 5px;
 }
 .authentification-button{
-    background-color: gray;
+    background-color:gray;
     font-weight: bold;
     color: black;
 }
 .bare{
     width: 12%;
     height: 50px;
+}
+.shadow:hover{
+    background-color: #02B717;
 }
