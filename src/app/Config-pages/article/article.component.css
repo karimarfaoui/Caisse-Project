@@ -12,12 +12,12 @@ h1{
 }
 
 select{
-    width: 20%;
+    width: 100%%;
     height: 40px;
     border-radius: 10px;
 }
 option{
-    width: 200px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
 }
@@ -48,9 +48,10 @@ aside{
 }
 footer button{
     width: 20%;
+    margin: 5px;
     border-radius: 10px;
     font-weight: 700;
-
+    height: 40px;
 }
 .inputAria{
   
