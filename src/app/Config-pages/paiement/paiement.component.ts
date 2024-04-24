@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './paiement.component.css'
 })
 export class PaiementComponent {
+  
 
 }
