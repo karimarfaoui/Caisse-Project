@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CheckboxModule } from 'primeng/checkbox';
@@ -10,6 +11,7 @@ import { style } from '@angular/animations';
   selector: 'app-acces',
   standalone: true,
   imports: [RouterLink,CheckboxModule, CommonModule ,FormsModule],
+
   templateUrl: './acces.component.html',
   styleUrl: './acces.component.css'
 })

@@ -1,4 +1,5 @@
 import { Component,OnInit, inject } from '@angular/core';
+
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DropdownModule } from 'primeng/dropdown';
 import { CheckboxModule } from 'primeng/checkbox';
@@ -9,6 +10,7 @@ import { ArticleService } from '../../@services/article.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../env/env';
+
 
 @Component({
   selector: 'app-article',
@@ -53,3 +55,4 @@ export class ArticleComponent implements OnInit{
     return this.http.get<any>(`${environment.apiUrl}/article`);
   }
 }*/
+
